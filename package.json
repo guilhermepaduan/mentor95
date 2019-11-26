@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "gulp build:dev:sync",
+    "build:dev": "gulp build:dev",
     "sass:site": "node-sass src/scss/ -o dist/css/ --output-style compressed",
     "sass": "npm run sass:site && npm run sass:site -- --watch --recursive"
   },

@@ -1,0 +1,32 @@
+/**
+ * Media queries
+ */
+@mixin mq_576() {
+  @media handheld, screen and(max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mq_768() {
+  @media handheld, screen and(max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mq_992() {
+  @media handheld, screen and(max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mq_1200() {
+  @media handheld, screen and(max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mq_1366() {
+  @media handheld, screen and(max-width: 1366px) {
+    @content;
+  }
+}
