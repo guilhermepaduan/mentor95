@@ -192,12 +192,17 @@ main .grid {
     border-top: 1px solid #eee;
 }
 
-.signin-main-section .user-btn a {
+.signin-main-section .user-infos .user-btn {
+    border: 0;
+}
+
+.signin-main-section .user-btn a, button {
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
     display: block;
     padding: 10px 25px;
+    border: 0;
     border-radius: 50px;
     background-color: #9385F2;
     transition: 0.25s;
@@ -262,13 +267,21 @@ main .grid {
 }
 
 .form-step {
+    visibility: hidden;
     display: none;
     height: 0;
     opacity: 0;
 }
 
 .form-step.active {
+    visibility: visible;
     display: block;
     height: auto;
     opacity: 1;
+}
+
+#form-prev-btn {
+    color: #9385F2;
+    margin-right: 10px;
+    background-color: transparent;
 }

@@ -17,7 +17,7 @@
                 <h1>Escolha uma opção para se cadastrar:</h1>
 
                 <form action="">
-                    <div class="tag-cloud form-step active">
+                    <div class="tag-cloud form-step active" id="tag-cloud-register">
                         <ul>
                             <li>
                                 <input type="radio" name="target" id="1" value=""/>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
 
-                    <div class="user-infos form-step">
+                    <div class="user-infos form-step" id="user-infos-register">
                         <div class="form-group">
                             <label>Nome</label>
                             <input type="text" class="form-control">
@@ -73,7 +73,10 @@
                             <input type="password" class="form-control">
                         </div>
 
-                        <button type="submit">Cadastrar</button>
+                        <div class="user-btn">
+                            <a href="#" id="form-prev-btn">voltar</a>
+                            <button type="submit">Cadastrar</button>
+                        </div>
                     </div>
                 </form>
             </div>
