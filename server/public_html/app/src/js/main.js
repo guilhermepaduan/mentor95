@@ -1,19 +1,32 @@
 $( document ).ready(function() {
-    $('.tag-cloud input').on('change', function() {
-        $('#form-next-btn').removeClass('disabled');
-     });
+  function h1_text () {
+    if ($('.user-infos').hasClass('active')) {
+      $('.signin-section h1').empty().text('Finalize sua inscrição:')
+    }
 
-    $('#form-next-btn').on( "click", function() {
-        $('.form-step').removeClass( "active" );
-        $('.user-infos').addClass( "active" );
-    });
+    else if ($('.form-step').hasClass('active')) {
+      $('.signin-section h1').empty().text('Escolha uma opção para se cadastrar:')
+    }
+  }
 
-    $('#form-prev-btn').on( "click", function() {
-        $('.form-step').removeClass( "active" );
-        $('.tag-cloud').addClass( "active" );
-    });
+  $('.tag-cloud input').on('change', function() {
+    $('#form-next-btn').removeClass('disabled');
+  });
 
-    //Validação simples
-    $("#formRegister").validate();
+  $('#form-next-btn').on( "click", function() {
+    $('.form-step').removeClass( "active" );
+    $('.user-infos').addClass( "active" );
 
+    h1_text()
+  });
+
+  $('#form-prev-btn').on( "click", function() {
+    $('.form-step').removeClass( "active" );
+    $('.tag-cloud').addClass( "active" );
+
+    h1_text()
+  });
+
+  //Validação simples
+  $("#formRegister").validate();
 });

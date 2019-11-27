@@ -1,3 +1,14 @@
+.mock {
+  position: relative;
+  width: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+
+
 /**
  * Header
  */
@@ -80,6 +91,8 @@
  */
 #content {
   padding: 50px 0;
+  background-repeat: no-repeat;
+  background-position: center -103px;
 }
 
 
