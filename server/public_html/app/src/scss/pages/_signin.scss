@@ -1,84 +1,84 @@
 /**
  * Sign in
  */
+.alignment-signin-section {
+  width: auto;
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+}
 
-#main_signin {
 
-    .signin-main-section {
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
-        padding: 50px;
-        width: 100%;
-        align-items: center;
-        flex-flow: column;
-        justify-content: center;
-        background-attachment: fixed;
-        background-size: cover;
-        
-        h1 {
-            text-align: center;
+.signin-section {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 50px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+  border-radius: 10px;
+  background: #fff;
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+
+  .tag-cloud {
+    display: block;
+    margin: 50px 0 0;
+
+    ul {
+      max-width: 620px;
+      display: flex;
+      flex-flow: column;
+      list-style: none;
+      margin: auto;
+
+      li {
+        font-size: 15px;
+        margin: 0 0 15px;
+
+      input {
+        display: none;
         }
 
-        .signin-grid {
-            width: auto !important;
-            padding-right: 50px !important;
-            padding-left: 50px !important;
+      label {
+        font-size: 19px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
 
-            .tag-cloud {
-                display: block;
-                margin: 50px 0 0;
+        span {
+        content: '';
+          position: relative;
+          width: 23px;
+          height: 23px;
+          display: block;
+          align-items: center;
+          margin: 0 5px 0 0;
+          border-radius: 50px;
+          border: 2px solid #525454;
+        }
+      }
 
-                ul {
-                    max-width: 620px;
-                    display: flex;
-                    flex-flow: column;
-                    list-style: none;
-                    margin: auto;
-
-                    li {
-                        font-size: 15px;
-                        margin: 0 0 15px;
-
-                        input {
-                            display: none;
-                        }
-
-                        label {
-                            font-size: 19px;
-                            display: flex;
-                            align-items: center;
-                            cursor: pointer;
-
-                            span {
-                                content: '';
-                                position: relative;
-                                width: 23px;
-                                height: 23px;
-                                display: block;
-                                align-items: center;
-                                margin: 0 5px 0 0;
-                                border-radius: 50px;
-                                border: 2px solid #525454;
-                            }
-                        }
-
-                        input[type=radio]:checked + label span:before {
-                            content: '';
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            bottom: 0;
-                            left: 0;
-                            margin: auto;
-                            width: 11px;
-                            height: 11px;
-                            border-radius: 50px;
-                            background: #525454;
-                        }
-                    }
-                }
-            }
+        input[type=radio]:checked + label span:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          width: 11px;
+          height: 11px;
+          border-radius: 50px;
+          background: #525454;
+        }
+      }
+    }
+  }
 
             .user-btn {
                 position: relative;
@@ -141,7 +141,7 @@
                             border: 2px solid #525454;
                         }
                     }
-                    
+
                     input[type=checkbox]:checked + label span {
                         background: #525454;
                     }
@@ -158,21 +158,20 @@
                     }
 
                     input[type=checkbox]:checked + label span:before {
-                        right: 6px;
+                        right: 7px;
                         bottom: -4px;
                         width: 8px;
                         transform: rotate(45deg);
                     }
 
                     input[type=checkbox]:checked + label span:after {
-                        right: -5px;
+                        right: -4px;
                         bottom: 0;
                         width: 13px;
                         transform: rotate(-45deg);
                     }
                 }
             }
-        }
 
         .user-infos {
             .user-btn {
@@ -237,4 +236,3 @@
         margin-right: 10px;
         background-color: transparent;
     }
-}

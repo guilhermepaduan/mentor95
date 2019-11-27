@@ -30,7 +30,7 @@ services:
     image: mysql:${MYSQL_VERSION:-latest}
     restart: always
     ports:
-      - "3306:3306"
+      - "33061:3306"
     volumes:
             - data:/var/lib/mysql
     networks:
