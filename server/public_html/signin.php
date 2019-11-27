@@ -14,16 +14,12 @@
     <div class="tag-cloud form-step active" id="tag-cloud-register">
       <ul>
         <li>
-          <input type="radio" name="target" id="1" value="Sou novo aqui" ' . (isset($_POST) && $_POST['target'] == 'Sou novo aqui' ? 'checked': '') . '/>
-          <label for="1" class="active"><span></span>Sou novo aqui</label>
+          <input type="radio" name="target" id="1" value="Quero conhecer o mundo da programação" ' . (isset($_POST) && $_POST['target'] == 'Quero conhecer o mundo da programação' ? 'checked': '') . '/>
+          <label for="1" class="active"><span></span>Quero conhecer o mundo da programação</label>
         </li>
         <li>
           <input type="radio" name="target" id="2" value="Quero aprender uma nova linguagem" ' . (isset($_POST) && $_POST['target'] == 'Quero aprender uma nova linguagem' ? 'checked': '') . '/>
           <label for="2"><span></span>Quero aprender uma nova linguagem</label>
-        </li>
-        <li>
-          <input type="radio" name="target" id="3" value="Quero aprender a programar" ' . (isset($_POST) && $_POST['target'] == 'Quero aprender a programar' ? 'checked': '') . '/>
-          <label for="3"><span></span>Quero aprender a programar</label>
         </li>
         <li>
           <input type="radio" name="target" id="4" value="Quero ter orientação para qual lado seguir" ' . (isset($_POST) && $_POST['target'] == 'Quero ter orientação para qual lado seguir' ? 'checked': '') . '/>
@@ -34,8 +30,8 @@
           <label for="5"><span></span>Quero ter orientação em qual tecnologia usar</label>
         </li>
         <li>
-          <input type="radio" name="target" id="6" value="Quero ter orientação em alguma tecnologia" ' . (isset($_POST) && $_POST['target'] == 'Quero ter orientação em alguma tecnologia' ? 'checked': '') . '/>
-          <label for="6"><span></span>Quero ter orientação em alguma tecnologia</label>
+          <input type="radio" name="target" id="6" value="Quero mudar de área dentro da programação" ' . (isset($_POST) && $_POST['target'] == 'Quero mudar de área dentro da programação' ? 'checked': '') . '/>
+          <label for="6"><span></span>Quero mudar de área dentro da programação</label>
         </li>
       </ul>
 
@@ -44,7 +40,7 @@
           <input type="checkbox" name="mentor" id="mentor" value="YES" ' . (isset($_POST) && $_POST['mentor'] == 'YES' ? 'checked': '') . '/>
           <label for="mentor"><span></span>Estou aqui para ajudar</label>
         </div>
-        <a href="#" id="form-next-btn" ' . (!isset($_POST) ? 'class="disabled"' : '') . '>Avançar</a>
+        <a href="#" id="form-next-btn" ' . (empty($_POST) ? 'class="disabled"' : '') . '>Avançar</a>
       </div>
     </div>
 
@@ -100,7 +96,7 @@
 
       <nav class="menu">
         <ul>
-          <li><a href="#">Entrar</a></li>
+          <li><a href="/login">Entrar</a></li>
         </ul>
       </nav>
     </div>
