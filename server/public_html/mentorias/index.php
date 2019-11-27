@@ -6,6 +6,21 @@
     <title>Mentor 95 | Mentorias</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="../app/dist/css/main.min.css">
+
+    <style>
+      #content .alignment {
+        position: relative;
+      }
+
+      #content a {
+        position: absolute;
+        top: 52px;
+        left: 28px;
+        width: 480px;
+        height: 205px;
+        background: transparent;
+      }
+    </style>
 </head>
 
 <body>
@@ -28,6 +43,9 @@
   </header>
 
   <main id="content" style="min-height:100vh; height:680px; background-image:url('../app/dist/images/mentorias.jpg')";>
+    <div class="alignment">
+      <a href="../meu_mentor"></a>
+    </div>
   </main>
 
   <footer id="footer">

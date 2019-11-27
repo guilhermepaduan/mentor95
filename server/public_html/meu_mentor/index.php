@@ -18,7 +18,6 @@
         left: 115px;
         width: 245px;
         height: 51px;
-        opacity: 0.5;
         border-radius: 50px;
         background: transparent;
       }
