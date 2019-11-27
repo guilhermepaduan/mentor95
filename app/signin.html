@@ -16,7 +16,7 @@
                 
                 <h1>Escolha uma opção para se cadastrar:</h1>
 
-                <form action="">
+                <form id="formRegister" method="post" action="">
                     <div class="tag-cloud form-step active" id="tag-cloud-register">
                         <ul>
                             <li>
@@ -50,27 +50,27 @@
                                 <input type="checkbox" name="mantory" id="mantory" value=""/>
                                 <label for="mantory"><span></span>Estou aqui para ajudar</label>
                             </div>
-                            <a href="#" id="form-next-btn">Avançar</a>
+                            <a href="#" id="form-next-btn" class="disabled">Avançar</a>
                         </div>
                     </div>
 
                     <div class="user-infos form-step" id="user-infos-register">
                         <div class="form-group">
-                            <label>Nome</label>
-                            <input type="text" class="form-control">
+                            <label for="cnome">Nome</label>
+                            <input type="text" id="cnome" name="nome" required minlength="2" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>Sobrenome</label>
-                            <input type="text" class="form-control">
+                            <label for="csobrenome">Sobrenome</label>
+                            <input type="text" id="csobrenome" name="sobrenome" required minlength="2" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>E-mail</label>
-                            <input type="email" class="form-control">
+                            <label for="cemail">E-mail</label>
+                            <input type="email" id="cemail" name="email" required class="form-control">
                         </div>
 
                         <div class="form-group">
-                            <label>Senha</label>
-                            <input type="password" class="form-control">
+                            <label for="csenha">Senha</label>
+                            <input type="password" id="csenha" required minlength="2" class="form-control">
                         </div>
 
                         <div class="user-btn">
@@ -82,7 +82,8 @@
             </div>
         </section>
     </main>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Inclusão do Plugin jQuery Validation-->
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>    
     <script src='src/js/main.js'></script>
 </body>
 </html>

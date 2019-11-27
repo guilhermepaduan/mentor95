@@ -3,7 +3,6 @@
  */
 
 #main_signin {
-    background: #9385F2;
 
     .signin-main-section {
         width: 100%;
@@ -14,7 +13,6 @@
         align-items: center;
         flex-flow: column;
         justify-content: center;
-        /* background-image: url('../images/background-home.jpg'); */
         background-attachment: fixed;
         background-size: cover;
         
@@ -61,7 +59,7 @@
                                 align-items: center;
                                 margin: 0 5px 0 0;
                                 border-radius: 50px;
-                                border: 2px solid #9385F2;
+                                border: 2px solid #525454;
                             }
                         }
 
@@ -76,7 +74,7 @@
                             width: 11px;
                             height: 11px;
                             border-radius: 50px;
-                            background: #9385F2;
+                            background: #525454;
                         }
                     }
                 }
@@ -102,7 +100,7 @@
                     padding: 10px 25px;
                     border: 0;
                     border-radius: 50px;
-                    background-color: #9385F2;
+                    background-color: #525454;
                     border: 1px solid transparent;
                     transition: 0.25s;
 
@@ -110,6 +108,13 @@
                         text-decoration: none;
                         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
                     }
+                }
+
+                a.disabled,
+                button.disabled {
+                    opacity: 0.3;
+                    pointer-events: none;
+                    cursor: not-allowed;
                 }
 
                 div {
@@ -133,12 +138,12 @@
                             align-items: center;
                             margin: -2px 5px 0 0;
                             border-radius: 5px;
-                            border: 2px solid #9385F2;
+                            border: 2px solid #525454;
                         }
                     }
                     
                     input[type=checkbox]:checked + label span {
-                        background: #9385F2;
+                        background: #525454;
                     }
 
                     input[type=checkbox]:checked + label span:before,
@@ -174,7 +179,7 @@
                 border: 0;
 
                 a:hover {
-                    border: 1px solid #9385F2;
+                    border: 1px solid #525454;
                     box-shadow: initial;
                 }
 
@@ -198,7 +203,7 @@
                         align-items: center;
                         margin: 0 5px 0 0;
                         border-radius: 5px;
-                        border: 2px solid #9385F2;
+                        border: 2px solid #525454;
                     }
                 }
             }
@@ -210,6 +215,14 @@
         display: none;
         height: 0;
         opacity: 0;
+
+        .error {
+            color: red;
+        }
+
+        input.error {
+            border: 1px solid red;
+        }
     }
 
     .form-step.active {
@@ -220,7 +233,7 @@
     }
 
     #form-prev-btn {
-        color: #9385F2;
+        color: #525454;
         margin-right: 10px;
         background-color: transparent;
     }
