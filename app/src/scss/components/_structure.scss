@@ -1,19 +1,113 @@
 /**
  * Header
  */
- 
-main {
-    min-height: 100vh;
+#header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
 
-    .grid {
-        position: relative;
-        width: 100%;
-        max-width: 1280px;
-        margin: auto;
-        display: block;
-        padding: 50px 25px;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
-        border-radius: 10px;
-        background: #fff;
+  .alignment {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .logotipo {
+    display: block;
+
+    img {
+      width: 100%;
+      max-width: 150px;
+      display: block;
     }
+  }
+
+  .menu {
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        display: block;
+        margin: 0 10px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          color: #fff;
+          font-size: 15px;
+          position: relative;
+
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            width: 100%;
+            height: 1px;
+            display: block;
+            opacity: 0;
+            background: #00f7ff;
+            transition: 0.25s all;
+          }
+
+          &:hover {
+            &:after {
+              margin-bottom: 5px;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/**
+ * Content
+ */
+#content {
+  padding: 50px 0;
+}
+
+main {
+ .grid {
+   position: relative;
+   width: 100%;
+   max-width: 1280px;
+   margin: auto;
+   display: block;
+   padding: 50px 25px;
+   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+   border-radius: 10px;
+   background: #fff;
+ }
+}
+
+
+
+/**
+ * Footer
+ */
+#footer {
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(0,0,0,0.25);
 }
