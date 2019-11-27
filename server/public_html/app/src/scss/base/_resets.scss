@@ -1,0 +1,41 @@
+/**
+ * Resets
+ */
+
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', Trebuchet MS, serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  background: #525454;
+
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.alignment {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 25px;
+}

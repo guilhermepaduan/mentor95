@@ -11,13 +11,13 @@ const sass = require('gulp-sass')
  */
 gulp.task('css:watch', function() {
   return gulp.src([
-    'app/src/scss/main.scss'
+    'server/public_html/app/src/scss/main.scss'
   ])
   .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
   .pipe(rename({
     suffix: '.min'
   }))
-  .pipe(gulp.dest('app/dist/css'))
+  .pipe(gulp.dest('server/public_html/app/dist/css'))
 })
 
 
@@ -27,16 +27,16 @@ gulp.task('css:watch', function() {
  */
 gulp.task('js:watch', function() {
   return gulp.src([
-    'app/src/js/components/*.js',
-    'app/src/js/pages/*.js',
-    'app/src/js/main.js',
+    'server/public_html/app/src/js/components/*.js',
+    'server/public_html/app/src/js/pages/*.js',
+    'server/public_html/app/src/js/main.js',
   ])
   .pipe(concat('main.js'))
   .pipe(uglify())
   .pipe(rename({
     suffix: '.min'
   }))
-  .pipe(gulp.dest('app/dist/js/'))
+  .pipe(gulp.dest('server/public_html/app/dist/js/'))
 })
 
 
@@ -45,6 +45,6 @@ gulp.task('js:watch', function() {
  * Watch files & Builders
  */
 gulp.task('build:dev', function() {
-  gulp.watch(['app/src/scss/**/*.scss'], gulp.series('css:watch'))
-  gulp.watch(['app/src/js/**/*.js'], gulp.series('js:watch'))
+  gulp.watch(['server/public_html/app/src/scss/**/*.scss'], gulp.series('css:watch'))
+  gulp.watch(['server/public_html/app/src/js/**/*.js'], gulp.series('js:watch'))
 })
