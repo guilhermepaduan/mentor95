@@ -17,7 +17,7 @@
         <header>
             <img src="" alt="logo">
             <nav>
-                <ul>signin.html#
+                <ul>
                     <li>
                         <a href=""></a>
                     </li>

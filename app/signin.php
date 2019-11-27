@@ -16,7 +16,7 @@
                 
                 <h1>Escolha uma opção para se cadastrar:</h1>
 
-                <form id="formRegister" method="post" action="">
+                <form id="formRegister" method="POST" action="signin.php">
                     <div class="tag-cloud form-step active" id="tag-cloud-register">
                         <ul>
                             <li>
@@ -82,8 +82,10 @@
             </div>
         </section>
     </main>
+    <?php print_r($_POST); ?>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Inclusão do Plugin jQuery Validation-->
     <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>    
     <script src='src/js/main.js'></script>
 </body>
 </html>
+
